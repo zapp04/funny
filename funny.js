@@ -9,11 +9,10 @@ const killem = function()
         const attacker = Entity.GetEntityFromUserID(Event.GetInt("attacker"));
         if(Entity.IsLocalPlayer(attacker) && attacker != Entity.GetEntityFromUserID(Event.GetInt("userid")))
         {
-            Cheat.ExecuteCommand("say " + retarded[Math.floor(Math.random() * retarded.length)]));
+            Cheat.ExecuteCommand("say " + retarded[Math.floor(Math.random() * retarded.length)]);
         }
     }
 };
 
-Cheat.ExecuteCommand("clear");
 Cheat.Print("funny.js loaded, killsay count: " + retarded.length + "\n"); // zachem...
 Cheat.RegisterCallback("player_death", "killem");
