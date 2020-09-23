@@ -22,6 +22,6 @@ function hitem()
 }
 
 Cheat.Print("randomtable.js loaded" + "\n"); // zachem...
-Cheat.Print("opener length: " + opener.length + "\n");
-Cheat.Print("joiner length: " + joiner.length + "\n");
+Cheat.Print("opener count: " + opener.length + "\n");
+Cheat.Print("joiner count: " + joiner.length + "\n");
 Cheat.RegisterCallback("player_hurt", "hitem");
