@@ -1,7 +1,7 @@
 /*
 by zapp04
 23.09.2020
-inspired by masterloser15
+inspired by masterlooser15
 
 */
 const checkbox = UI.AddCheckbox("randomtable");
