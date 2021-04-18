@@ -10,8 +10,7 @@ const joiner = ["keybind", "antiaim", "kd", "gamingcarpet", "knifechanger", "dea
 function hitem()
 {
     const attacker_id = Event.GetInt("attacker");
-    const attacker_weapon = Event.GetString("weapon");
-
+    
     if(Entity.IsLocalPlayer(Entity.GetEntityFromUserID(attacker_id))) {
         Cheat.ExecuteCommand("say " + opener[Math.floor(Math.random() * opener.length)] + " " + joiner[Math.floor(Math.random() * joiner.length)] );
     }
